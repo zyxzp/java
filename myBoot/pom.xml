@@ -41,7 +41,7 @@
         </dependency>
 
         <dependency>
-            <groupId>msysql</groupId>
+            <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
