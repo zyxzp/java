@@ -25,11 +25,13 @@ public class ProductCategory {
     /** 类目名称 */
     private  String categoryName;
 
-    /** 类目编号 */
+    /** 类目编号 唯一 */
     private Integer categoryType;
 
+    /** 创建时间 */
     private Date createTime;
 
+    /** 更新时间 */
     private Date updateTime;
 
 }
