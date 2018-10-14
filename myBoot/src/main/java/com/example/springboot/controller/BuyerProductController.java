@@ -7,6 +7,7 @@ import com.example.springboot.entity.ProductCategory;
 import com.example.springboot.entity.ProductInfo;
 import com.example.springboot.service.CategoryService;
 import com.example.springboot.service.ProductService;
+import com.example.springboot.utils.ResultVOUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -68,12 +69,7 @@ List<ProductVo> productVoList=new ArrayList<ProductVo>();
             productVoList.add(productVo);
         }
 
-
-        ResultVo resultVo = new ResultVo();
-        resultVo.setData(productVoList);
-        resultVo.setCode(0);
-        resultVo.setMsg("成功");
-        return resultVo;
+        return ResultVOUtil.success(productVoList);
     }
 
 }
