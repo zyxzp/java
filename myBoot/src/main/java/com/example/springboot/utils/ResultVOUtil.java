@@ -1,6 +1,6 @@
 package com.example.springboot.utils;
 
-import com.example.springboot.VO.ResultVo;
+import com.example.springboot.VO.ResultVO;
 
 /**
  * @Auther: Administrator
@@ -8,20 +8,20 @@ import com.example.springboot.VO.ResultVo;
  * @Description:
  */
 public class ResultVOUtil {
-    public static ResultVo success(Object object) {
-        ResultVo resultVO = new ResultVo();
+    public static ResultVO success(Object object) {
+        ResultVO resultVO = new ResultVO();
         resultVO.setData(object);
         resultVO.setCode(0);
         resultVO.setMsg("成功");
         return resultVO;
     }
 
-    public static ResultVo success() {
+    public static ResultVO success() {
         return success(null);
     }
 
-    public static ResultVo error(Integer code, String msg) {
-        ResultVo resultVO = new ResultVo();
+    public static ResultVO error(Integer code, String msg) {
+        ResultVO resultVO = new ResultVO();
         resultVO.setCode(code);
         resultVO.setMsg(msg);
         return resultVO;

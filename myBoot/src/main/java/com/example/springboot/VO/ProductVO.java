@@ -11,7 +11,7 @@ import java.util.List;
  * @Description:商品（包含类目）
  */
 @Data
-public class ProductVo {
+public class ProductVO {
 
 
     @JsonProperty("name")
@@ -21,5 +21,5 @@ public class ProductVo {
     private Integer categoryType;
 
     @JsonProperty("foods")
-    private List<ProductInfoVo> productInfoVoList;
+    private List<ProductInfoVO> productInfoVOList;
 }
